@@ -2,6 +2,12 @@
 
 Submission for Tim Smith's Shokunin Challenge, July 2019.
 
+## Installation
+
+```
+pip install -r requirements.txt
+```
+
 ## Usage
 
 ```
