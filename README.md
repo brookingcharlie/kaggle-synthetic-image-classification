@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```
-jupyter notebook notebook.ipynb
+jupyter notebook src/notebook.ipynb
 ```
 
 ## Background
