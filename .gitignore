@@ -1,4 +1,4 @@
 input/*
-output/*
+src/submission.csv
 .ipynb_checkpoints/
 __pycache__/

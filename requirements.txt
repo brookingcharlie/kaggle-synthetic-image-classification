@@ -1,4 +1,8 @@
 jupyterlab
+kaggle
 pandas
+numpy
+scikit-learn
+tensorflow
+keras
 pillow
-tensorflow==2.0.0-beta1
