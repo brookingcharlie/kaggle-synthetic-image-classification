@@ -14,12 +14,36 @@ pip install -r requirements.txt
 jupyter notebook src/notebook.ipynb
 ```
 
+## Maintenance notes
+
+### Isolation using Conda
+
+```
+conda create --name synimg python=3.6
+conda activate synimg
+pip install -r requirements.txt
+jupyter notebook src/notebook.ipynb
+conda deactivate
+```
+
+### In progress: Docker usage
+
+Not fully tested, missing `kaggle` dependency but otherwise might be OK.
+
+```
+docker run \
+-p 8888:8888 \
+-v $PWD:/home/jovyan/work \
+jupyter/tensorflow-notebook \
+jupyter notebook work/src/notebook.ipynb
+```
+
 ## Background
 
 Machine learning can be used to classify images. It can tell us: "This is a picture of a dog",
 "Picasso made this painting", that sort of thing.
 
-## Challenge
+### Challenge
 
 I have prepared a collection of computer generated images in different styles (the styles are named
 after cities). A bunch of the images have labels indicating their style. Some of them are unlabelled.
@@ -30,7 +54,7 @@ The data, and more details, can be found at: <https://www.kaggle.com/c/synthetic
 That link goes to a Kaggle InClass competition I created. Kaggle is a website for machine learning
 competitions. The InClass competitions are academic competitions that don't affect your ranking.
 
-## Submission
+### Submission
 
 What to submit?
 
@@ -42,7 +66,7 @@ When to submit?
 * Kaggle competition finishes: 23:59:59 on Thursday July 31st UTC (that's 2 weeks away, people).
 * Code to Tim by: 23:59:59 August 2nd UTC
 
-## Criteria for Awesomeness
+### Criteria for Awesomeness
 
 * Clean Code
 * Evidence of TDD
